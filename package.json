@@ -3,10 +3,16 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "main": "dist/@ayun/vue-codemirror.umd.js",
+  "module": "dist/@ayun/vue-codemirror.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:notsc": "vite build"
   },
   "dependencies": {
     "@codemirror/autocomplete": "^6.16.2",
