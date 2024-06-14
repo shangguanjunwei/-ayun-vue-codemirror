@@ -1,9 +1,6 @@
 {
   "name": "@shangguanjunwei/vue-codemirror",
-  "version": "0.0.2",
-  "publishConfig": {
-    "access": "public"
-  },
+  "version": "0.0.3",
   "type": "module",
   "main": "dist/@ayun/vue-codemirror.umd.js",
   "module": "dist/@ayun/vue-codemirror.es.js",
