@@ -1,19 +1,13 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import { resolve } from "path";
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      "@": resolve(__dirname, "./src")
-    },
-    extensions: [".vue", ".ts", ".js", ".tsx", ".jsx", ".mjs", ".json"]
-  },
   plugins: [vue()],
   build: {
     lib: {
-      entry: './src/index.ts',
+      entry: 'src/index.ts',
       name: '@ayun/vue-codemirror',
       fileName: (format) => `@ayun/vue-codemirror.${format}.js`
     },
@@ -27,5 +21,11 @@ export default defineConfig({
         },
       }
     }
-  }
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src")
+    },
+    extensions: [".vue", ".ts", ".js", ".tsx", ".jsx", ".mjs", ".json"]
+  },
 })

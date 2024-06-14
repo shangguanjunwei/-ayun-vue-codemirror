@@ -1,18 +1,22 @@
 {
-  "name": "@shangguanjunwei/vue-codemirror",
-  "version": "0.0.3",
-  "type": "module",
+  "name": "@amoayun/vue-codemirror",
+  "version": "1.0.0",
+  "description": "pure's love for ayun",
   "main": "dist/@ayun/vue-codemirror.umd.js",
   "module": "dist/@ayun/vue-codemirror.es.js",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "build:notsc": "vite build"
   },
+  "type": "module",
+  "keywords": [
+    "your",
+    "keywords",
+    "here"
+  ],
+  "author": "pure's love for ayun",
   "dependencies": {
     "@codemirror/autocomplete": "^6.16.2",
     "@codemirror/lang-java": "^6.0.1",

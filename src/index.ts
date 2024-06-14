@@ -1,5 +1,4 @@
-import AYunCodemirror from './components/AYunCodemirror/index.vue';
-
-export default {
-  AYunCodemirror
+import AmoYunCodemirror from './components/AmoYunCodemirror/index.vue';
+export {
+  AmoYunCodemirror
 };

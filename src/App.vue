@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import AYunCodeMirror from '@/components/AYunCodemirror/index.vue';
+import AYunCodeMirror from './components/AYunCodemirror/index.vue';
 import { ref } from 'vue';
 
 const jsonData = ref<any>('');

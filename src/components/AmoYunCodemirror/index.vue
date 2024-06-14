@@ -72,38 +72,3 @@ defineExpose<{
   codeMirror: toRaw(codeMirrorRef)
 });
 </script>
-
-<style scoped lang="less">
-.my-code-mirror {
-  width: 100%;
-  border: 1px solid #eee;
-  overflow: auto;
-  position: relative;
-
-  :deep(.cm-editor) {
-    min-height: 100%;
-
-    &.cm-focused {
-      outline: none;
-    }
-  }
-}
-
-// 兼容windows系统下的滚动条样式
-.my-scrollbar {
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #c1c1c1;
-    border-radius: 6px;
-  }
-}
-
-.my-no-scrollbar {
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-</style>
