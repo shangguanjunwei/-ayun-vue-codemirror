@@ -21,7 +21,7 @@ const insertFlag = ref<boolean>(false);
 const codeMirrorRef = ref<any>(null);
 watchEffect(() => {
   if (typeof props.modelValue !== 'string') {
-    console.error('codeMirror组件 v-model 绑定值必须是字符串类型');
+    // console.error('codeMirror组件 v-model 绑定值必须是字符串类型');
     return;
   };
   // 如果插入标识为false，说明是外层的数据发生了改变
@@ -76,9 +76,8 @@ defineExpose<{
 <style scoped lang="less">
 .my-code-mirror {
   width: 100%;
-  border: 1px solid var(--color-neutral-3);
+  border: 1px solid #eee;
   overflow: auto;
-  min-height: 200px;
   position: relative;
 
   :deep(.cm-editor) {
@@ -97,7 +96,7 @@ defineExpose<{
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: var(--color-neutral-4);
+    background-color: #c1c1c1;
     border-radius: 6px;
   }
 }
